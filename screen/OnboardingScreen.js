@@ -64,7 +64,7 @@ const OnboardingScreen = ({ navigation }) => {
 			NextButtonComponent={Next}
 			DoneButtonComponent={Done}
 			DotComponent={Dots}
-			onSkip={() => navigation.replace('Login')}
+			onSkip={() => navigation.replace('Signup')}
 			onDone={() => navigation.navigate('Login')}
 			pages={[
 				{

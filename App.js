@@ -5,6 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import OnboardingScreen from './screen/OnboardingScreen';
 import LoginScreen from './screen/LoginScreen';
+import SignupScreen from './screen/SignupScreen';
 
 const AppStack = createStackNavigator();
 
@@ -14,6 +15,7 @@ export default function App() {
 			<AppStack.Navigator header='none'>
 				<AppStack.Screen name='Donation' component={OnboardingScreen} />
 				<AppStack.Screen name='Login' component={LoginScreen} />
+				<AppStack.Screen name='Signup' component={SignupScreen} />
 			</AppStack.Navigator>
 		</NavigationContainer>
 	);
