@@ -10,7 +10,7 @@ import {
 import { MaterialIcons } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
 
-function LoginScreen(props) {
+function LoginScreen({ navigation }) {
 	return (
 		<View style={styles.container}>
 			<Image style={styles.logo} source={require('../assets/forms/logo.png')} />
@@ -84,7 +84,12 @@ function LoginScreen(props) {
 			>
 				<Text style={{}}>Already have an account?</Text>
 				<TouchableOpacity style={{ paddingLeft: 10 }}>
-					<Text style={{ color: '#27AE60' }}>Sign in</Text>
+					<Text
+						style={{ color: '#27AE60' }}
+						onPress={() => navigation.navigate('Login')}
+					>
+						Sign in
+					</Text>
 				</TouchableOpacity>
 			</View>
 		</View>
